@@ -1,0 +1,19 @@
+<div class="container">
+    <header>  
+        <h1>APOD : Astronomy Picture Of the Day</h1>
+        <a target="_blank" href="https://api.nasa.gov/"><h1>NASA open APIs</h1></a> 
+    </header>
+
+    <div *ngIf="spacePictures">
+        <div class="dataContainer" *ngFor="let spacePicture of spacePictures">
+          
+        <img class="spaceImage" [src]="spacePicture.imageURL" alt="">
+    
+        <section class="txtWrap">
+            <h3>{{spacePicture.title}}  <span> / {{spacePicture.copyright}}</span></h3>
+            <p>{{spacePicture.explanation}}</p>    
+        </section>  
+        </div>
+    </div>
+</div>
+
