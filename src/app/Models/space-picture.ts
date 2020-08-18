@@ -8,7 +8,7 @@ export class SpacePicture {
 
     
         constructor (
-            ntm: string,
+            copyright: string,
             date: Date,
             imageURL: string,
             title: string,
@@ -16,7 +16,7 @@ export class SpacePicture {
             explanation: string,
             
         ) {
-            this.copyright = ntm;
+            this.copyright = copyright;
             this.date = date;
             this.imageURL = imageURL;
             this.title = title;
